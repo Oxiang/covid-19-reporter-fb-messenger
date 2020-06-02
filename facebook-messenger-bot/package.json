@@ -4,7 +4,8 @@
   "description": "covid-19 reporter for facebook messenger",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "xiangqian",
   "license": "ISC",
