@@ -16,6 +16,11 @@ app.use(bodyParser.json());
 // app routes
 require('./routes/webhook_verify')(app);
 
+// Server frontpage
+app.get('/', function (req, res) {
+  res.send('This is TestBot Server');
+});
+
 // warming up the engines !! setta !! go !!!.
 app.listen(app.get('port'), function() {
   const url = 'http://localhost:' + app.set('port');
